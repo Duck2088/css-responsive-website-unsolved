@@ -70,28 +70,29 @@
     padding: 5px;
   }
   .teammates-list:before {
-    content: "";
+    content: none;
   }
   .teammates-list::after {
-    content: "";
+    content: none;
   }
   .teammates-list-wrapper {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0;
-  }
-  .teammates-list{
-    gap:0;
+    gap: 30px;
   }
   .teammate {
     align-items: center;
+    width: 47%;
   }
-
-.teammate-data {
-  margin-bottom: 15px;
-}
+  .teammate-social-icons {
+    gap: 15px;
+  }
+  .teammate-data {
+    text-align: center;
+    align-items: center;
+  }
   .teammate-img-wrapper {
-    width: 80%;
+    width: 100%;
   }
   .teammate-social-icons div {
     background-color: darkgray;
@@ -115,7 +116,7 @@
 }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
-@media (min-width: 0px) AND (max-width: 767px) {
+@media (min-width: 360px) AND (max-width: 767px) {
   .top-navigation ul {
     display: none;
   }
@@ -130,44 +131,50 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .portfolio-list .portfolio-item-info {
     gap: 10px;
     align-items: center;
   }
-  .portfolio-list .portfolio-item-info .item-description{
+  .portfolio-list .portfolio-item-info .item-description {
     text-align: center;
   }
-  
-  .teammates-content .section-info .subtext{
+
+  .teammates-content .section-info .subtext {
     max-width: 100%;
   }
-
   .teammates-list:before {
-    content: "";
+    content: none;
   }
   .teammates-list::after {
-    content: "";
+    content: none;
   }
+
   .teammates-list-wrapper {
     flex-direction: column;
   }
   .teammate {
     flex-direction: row;
-    justify-content: center;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid black;
   }
-  .teammate-data{
+  .teammate-img-wrapper {
+    width: 50%;
+  }
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+  .teammate-data {
+    width: 100%;
     justify-content: center;
-    gap: 30px;
   }
-  .teammate-info{
-    justify-content: flex-end;
+
+  .teammate-social-icons {
+    gap: 15px;
   }
+
   .teammate-social-icons div {
     background-color: darkgray;
-    cursor: pointer;
   }
 
   footer .teammates-content {
@@ -185,7 +192,7 @@
     color: white;
     display: inline-block;
   }
-  footer .social-icons .icon{
+  footer .social-icons .icon {
     background-color: white;
   }
   footer .social-icons {
@@ -195,8 +202,4 @@
     flex-direction: column;
     align-items: center;
   }
-
-
-
-  
 }
